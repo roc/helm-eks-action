@@ -21,4 +21,4 @@ echo "running entrypoint command(s)"
 
 response=$(sh -c " $INPUT_COMMAND")
 
-echo "response=$response" >> $GITHUB_OUTPUT
+$GITHUB_OUTPUT="$GITHUB_OUTPUT response=$response"
